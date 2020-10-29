@@ -1,0 +1,19 @@
+<html>
+  <head>
+    <title>Pi Video Surveillance</title>
+  </head>
+  <body>
+    <h1>Pi Video Surveillance</h1>
+    <img src="{{ url_for('recognition') }}">
+  <form>
+      <input type="submit" value="Mark attendance" formaction="{{ url_for('markAttendance') }}" onclick="return mark_attendance()">
+  </form>
+  <script type="text/javascript">
+      function mark_attendance() {
+        // body...
+        ans=confirm("Are you sure that you want to mark the attendance and upload it to the sheets?")
+        return ans
+      }
+    </script>
+  </body>
+</html>

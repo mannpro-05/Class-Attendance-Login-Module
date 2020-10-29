@@ -1,0 +1,20 @@
+{% extends "layout.html" %}
+{% block content %}
+<style type="text/css">
+	.red{
+		color: red;
+	}
+</style>
+<div class = "form-group">
+	<form method="post" action = "">
+		Enrollment Number: <input name="eno"><br>
+		Name: <input name="name"><br>
+		<input type="submit" name="" value="Take Images" formaction="/imgCapture">&nbsp&nbsp&nbsp&nbsp
+		<input type="submit" name="" value="Train Model" formaction="/train">&nbsp&nbsp&nbsp&nbsp
+		<input type="submit" name="" value="Track Image" formaction="/recog">
+	</form>
+</div>
+<div>
+	{{ message }}
+</div>
+{% endblock content %}
